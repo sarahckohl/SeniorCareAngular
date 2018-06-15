@@ -12,13 +12,13 @@
                   <h3>Login</h3>
                   <hr>
                 </div>
-                <form>
+                <form (ngSubmit)="login()">
                   <div class="form-group">
-                    <input id="username" type="text" class="form-control" name=""
+                    <input id="username" type="text" class="form-control" formControlName="username" name=""
                       placeholder="Enter username">
                   </div>
                   <div class="form-group">
-                    <input id="password" type="password" class="form-control" name=""
+                    <input id="password" type="password" class="form-control"formControlName="password" name=""
                       placeholder="Enter password">
                   </div>
                   <div class="form-group">
@@ -26,7 +26,7 @@
                     Remember Password
                   </div>
                   <div class="form-group">
-                    <input type="button" style="background:rgb(31, 189, 252);border-style:none;" class="form-control" name="" value="Login"
+                    <input type="submit" style="background:rgb(31, 189, 252);border-style:none;" class="form-control" name="" value="Login"
                       id="login">
                   </div>
                   <span class="danger" id="message"></span>
