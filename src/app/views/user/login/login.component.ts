@@ -1,8 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl} from '@angular/forms';
+import { Router } from '@angular/router';
+
+
 import { routing } from '../../../app.routing';
 import { LoginService } from '../../../services/user.service';
 import { User } from '../../../user';
-import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-login',
@@ -10,11 +15,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  username: string;
-  password: string;
+
   constructor() { }
 
+
+  loginForm;
+
   ngOnInit() {
+    this.loginForm = new FormGroup({
+      username : new FormControl(),
+      password : new FormControl(),
+    });
   }
 
 }

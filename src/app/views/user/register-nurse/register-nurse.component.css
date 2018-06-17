@@ -55,15 +55,6 @@
         list-style: none;
     }
 
-    ul li#user{
-        background: url(/SeniorCareAngular/src/app/views/user/register-nurse/images/user-l.png) no-repeat 0px;
-    }
-    ul li#team{
-        background: url(/SeniorCareAngular/src/app/views/user/register-nurse/images/network.png) no-repeat 0px;
-    }
-    ul li#analytics{
-        background: url(/SeniorCareAngular/src/app/views/user/register-nurse/images/report.png) no-repeat 0px;
-    }
 
 
     @media only screen and (max-width: 1050px) {
