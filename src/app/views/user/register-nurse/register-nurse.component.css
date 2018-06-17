@@ -43,26 +43,26 @@
 
 
     .form-register .u-name{
-        background: url(../register/images/user.png) no-repeat 16px center;
+        background: url(../register-nurse/images/user.png) no-repeat 16px center;
     }
     .form-register .e-mail{
-        background: url(../register/images/mail.png) no-repeat 16px center;
+        background: url(../register-nurse/images/mail.png) no-repeat 16px center;
     }
     .form-register .p-password{
-        background: url(../register/images/padlock.png) no-repeat 16px center;
+        background: url(../register-nurse/images/padlock.png) no-repeat 16px center;
     }
     ul{
         list-style: none;
     }
 
     ul li#user{
-        background: url(/SeniorCareAngular/src/app/views/user/register/images/user-l.png) no-repeat 0px;
+        background: url(/SeniorCareAngular/src/app/views/user/register-nurse/images/user-l.png) no-repeat 0px;
     }
     ul li#team{
-        background: url(/SeniorCareAngular/src/app/views/user/register/images/network.png) no-repeat 0px;
+        background: url(/SeniorCareAngular/src/app/views/user/register-nurse/images/network.png) no-repeat 0px;
     }
     ul li#analytics{
-        background: url(/SeniorCareAngular/src/app/views/user/register/images/report.png) no-repeat 0px;
+        background: url(/SeniorCareAngular/src/app/views/user/register-nurse/images/report.png) no-repeat 0px;
     }
 
 
