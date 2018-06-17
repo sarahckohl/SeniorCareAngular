@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|Open+Sans|Source+Sans+Pro|Ubuntu');
+/* LOGIN PAGE STYLE SHEET
+LOGIN.HTML
+*/
+
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Muli', sans-serif;
+*/
+body{
+	font-family: 'Muli', sans-serif;
+
+}
+a, a:hover{
+	text-decoration: none;
+	cursor: grabbing;
+}
+
+.bg-form {
+	background: url(../../user/login/images/fake-care.jpg);
+	background-position: 100% 0;
+	background-size: cover;
+	max-height: 100%;
+}
+
+.login-form{
+	background: #fff;
+	padding: 30px 50px;
+	margin: 62px 0px;
+}
+.login-form .form-control {
+	height: 50px;
+	border-radius: 0px;
+}
+.login-form #btn{
+	background: #FCD71F;
+	border: none;
+}
+
+.bg-form .contact-text{
+	color: #fff;
+	margin: 100px 0px;
+}
+.social-logins, .social{
+	margin: 30px 0px;
+}
+
+.social a{
+	border: 1px solid #FCD71F;
+	padding: 5px 10px;
+	background: #FCD71F;
+	color: #fff;
+}
+.forget-password a{
+	color: #333;
+}
+
+.contact-text p{
+	line-height: 1.6em;
+}
