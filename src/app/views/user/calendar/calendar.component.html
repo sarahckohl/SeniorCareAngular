@@ -1,0 +1,80 @@
+
+<form>
+  <table class="table" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="10">
+    <thead>
+    <tr>
+        <th style="width: 25%">
+            <mfDefaultSorter by="schedule">Schedule</mfDefaultSorter>
+        </th>
+        <th style="width: 25%">
+            <mfDefaultSorter by="patients">Available Patients</mfDefaultSorter>
+        </th>
+        <th style="width: 25%">
+            <mfDefaultSorter by="notifications">Notifications</mfDefaultSorter>
+        </th>
+        <th style="width: 25%">
+            <mfDefaultSorter by="supplise">Supplies Request</mfDefaultSorter>
+        </th>
+        <th style="width: 25%">
+            <mfDefaultSorter by="profile">Profile</mfDefaultSorter>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td id="day">
+        June 4, 2018 {{this.day}}
+      </td>
+    </tr>
+    <tr>
+      <td id="nine">&nbsp;9:00-10:00am {{this?.patient}}</td>
+      <td>{{this?.patient}}</td>
+    </tr>
+    <tr>
+        <td id="ten">10:00-11:00am {{this?.patient}}</td>
+        <td>{{this?.patient}}</td>
+    </tr>
+    <tr>
+        <td id="eleven">11:00-12:00pm {{item?.patient}}</td>
+        <td>{{this?.patient}}</td>
+    </tr>
+    <tr>
+        <td id="twelve">&nbsp;12:00-1:00pm {{this.patient}}</td>
+        <td>{{this?.patient}}</td>
+    </tr>
+    <tr>
+        <td id="one">&nbsp;1:00-2:00pm {{this?.patient}}</td>
+        <td>{{this?.patient}}</td>
+    </tr>
+    <tr>
+        <td id="two">&nbsp;2:00-3:00pm {{this?.patient}}</td>
+        <td>{{this?.patient}}</td>
+    </tr>
+    <tr>
+        <td id="three">&nbsp;3:00-4:00pm {{this?.patient}}</td>
+        <td>{{this?.patient}}</td>
+    </tr>
+    <tr>
+        <td id="four">&nbsp;4:00-5:00pm </td>
+        <td>{{this?.patient}}</td>
+    </tr>
+    <tr>
+        <td id="five">&nbsp;5:00-6:00pm </td>
+        <td>{{item?.patient}}</td>
+    </tr>
+    <tr *ngFor="let item of mf.data">
+        <td></td>
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+        <td class="text-right">{{item.age}}</td>
+        <td>{{item.city | uppercase}}</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="4">
+            <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+        </td>
+    </tr>
+    </tfoot>
+</table>
