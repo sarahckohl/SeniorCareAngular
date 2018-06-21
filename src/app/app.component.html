@@ -12,17 +12,18 @@
 </head>
 
 <body>
-
-  <nav class="navbar navbar-default navbar-static-top">
-      <div class="navbar-header">
-        <a routerLink="/login">Login</a>
-        <a routerLink="/register_patient">Register as a Patient</a>
-        <a routerLink="/register_nurse">Register as a Nurse</a>
-      </div>
-  </nav>
-
-
-          
+    <nav class="navbar navbar-default navbar-static-top"  style="display: none">
+        <div class="navbar-header">
+          <a routerLink="/login">Login</a>
+                
+          <a routerLink="/register_patient">Register as a Patient</a>
+          &nbsp;
+          <a routerLink="/register_nurse">Register as a Nurse</a>
+          &nbsp;
+          <a routerLink="/calendar">Scheduler</a>
+        </div>
+    </nav>
+       
 
 <router-outlet></router-outlet>
 

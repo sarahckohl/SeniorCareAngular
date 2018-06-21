@@ -4,8 +4,7 @@ import { Router } from '@angular/router';
 
 
 import { routing } from '../../../app.routing';
-import { LoginService } from '../../../services/user.service';
-import { User } from '../../../user';
+
 
 
 

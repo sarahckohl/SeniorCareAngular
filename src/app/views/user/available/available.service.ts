@@ -6,6 +6,7 @@ import { patients }  from '../calendar/mock.data';
   providedIn: 'root'
 })
 export class AvailableService {
+  
   //Replace with Http constructor when connecting to Spring
   // constructor(private http: HttpClient) {}
   

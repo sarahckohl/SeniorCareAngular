@@ -17,4 +17,8 @@ export class AvailableComponent implements OnInit {
             this.patients = value;
   });
 }
+addPatient(){
+
+}
+
 }

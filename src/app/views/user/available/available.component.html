@@ -4,21 +4,23 @@
   <table class="table" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="10">
     <thead>
     <tr>
-        <th style="width:19.5%">
+        <th style="width:16.5%; text-align: center">
             <mfDefaultSorter by="schedule"><a href="http://localhost:4200/calendar">Schedule</a></mfDefaultSorter>
         </th>
-        <th style="width: 19.5%" class="bg-primary">
+        <th style="width: 16.5%; text-align: center" class="bg-primary">
             <mfDefaultSorter by="patients">Available Patients</mfDefaultSorter>
         </th>
-        <th style="width: 19.5%">
+        <th style="width: 16.5%; text-align: center">
             <mfDefaultSorter by="notifications">Notifications</mfDefaultSorter>
         </th>
-        <th style="width: 19.5%">
+        <th style="width: 16.5%; text-align: center">
             <mfDefaultSorter by="supplies">Supplies Request</mfDefaultSorter>
         </th>
-        <th style="width: 19.5%">
+        <th style="width: 16.5%; text-align: center">
             <mfDefaultSorter by="profile">Profile</mfDefaultSorter>
         </th>
+        <th style="width: 16.5%; text-align: center"><a href="http://localhost:4200/login">Logout</a></th>
+               
     </tr>
     </thead>
     
@@ -29,13 +31,13 @@
       <tr>
         <th style="width:12.5%; text-align: center">Name</th>
         <th style="width:12.5%; text-align: center">Age</th>
-        <th style="width:12.%; text-align: center">Location</th>
+        <th style="width:12.5%; text-align: center">Location</th>
         <th style="width:12.5%; text-align: center">Care Needed</th>
         <th style="width:12.5%; text-align: center">Date Needed</th>
         <th style="width:12.5%; text-align: center">Time</th>
         <th style="width:12.5%; text-align: center">Medication</th>
         <th style="width:12.5%; text-align: center">Add</th>
-        <th></th>
+      
       </tr>
     </thead>
     <tbody id="tablebody">
@@ -47,7 +49,7 @@
         <td style="width:12.5%; text-align: center">{{ patient.dateneed }} </td>
         <td style="width:12.5%; text-align: center">{{ patient.time }} </td>
         <td style="width:12.5%; text-align: center">{{ patient.meds }}</td>
-        <td align="center" style="width:12.5%; text-align: center"><button type="button" class="btn btn-primary btn-sm" (click)="addPatient()">Add</button></td>
+        <td align="center" style="width:12.5%; text-align: center"><a routerLink="/calendar" button type="submit" class="btn btn-primary btn-sm" (click)="addPatient()">Add</a></td>
              
       </tr>
     </tbody>
