@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule, HttpClient} from '@angular/common/http';
+import { HttpModule} from '@angular/http';
 
 
 import { AppComponent } from './app.component';
@@ -10,6 +12,8 @@ import { RegisterNurseComponent } from './views/user/register-nurse/register-nur
 
 
 import { routing } from './app.routing';
+import { AppointSchedulerComponent } from './views/user/appoint-scheduler/appoint-scheduler.component';
+import { InterceptorModule } from '../interceptor/interceptor.module';
 
 
 
@@ -20,12 +24,17 @@ import { routing } from './app.routing';
     LoginComponent,
     RegisterComponent,
     RegisterNurseComponent,
+    AppointSchedulerComponent,
+    
     
   ],
   imports: [
     ReactiveFormsModule,
     BrowserModule,
-    routing
+    routing,
+    HttpClientModule,
+    HttpModule,
+    InterceptorModule
     
   ],
   providers: [],
