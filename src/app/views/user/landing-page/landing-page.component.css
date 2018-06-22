@@ -1,0 +1,21 @@
+#background{
+	background-image: url(../../user/login/images/fake-care.jpg);
+	
+	background-size: cover;
+    max-height: 950%;
+    height: 650px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+  
+}
+
+#login {
+  text-align: center;
+  height: 50px;
+  width: 100px;
+  margin-top: 350px;
+ 
+    
+  }

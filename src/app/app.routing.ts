@@ -7,6 +7,8 @@ import { CalendarComponent } from './views/user/calendar/calendar.component';
 import { AvailableComponent } from './views/user/available/available.component';
 import { AppointmentComponent } from './views/user/appointment/appointment.component';
 import { CreateComponent } from './views/user/create/create.component';
+import { LandingPageComponent } from './views/user/landing-page/landing-page.component';
+
 
 const appRoutes: Routes = [
     { path: 'login', component: LoginComponent },
@@ -15,7 +17,8 @@ const appRoutes: Routes = [
     { path: 'calendar', component: CalendarComponent },
     { path: 'available', component: AvailableComponent },
     { path: 'appointment', component: AppointmentComponent },
-    { path:  'create', component: CreateComponent }
+    { path:  'create', component: CreateComponent },
+    { path: "", component: LandingPageComponent }
 
 ];
 

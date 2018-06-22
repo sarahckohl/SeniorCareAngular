@@ -14,7 +14,10 @@ import { CalendarComponent } from './views/user/calendar/calendar.component';
 import { AvailableComponent } from './views/user/available/available.component';
 import { AppointmentComponent } from './views/user/appointment/appointment.component';
 import { CreateComponent } from './views/user/create/create.component';
-
+import { HttpClient } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+import { LandingPageComponent } from './views/user/landing-page/landing-page.component';
 
 
 @NgModule({
@@ -26,7 +29,8 @@ import { CreateComponent } from './views/user/create/create.component';
     CalendarComponent,
     AvailableComponent,
     AppointmentComponent,
-    CreateComponent
+    CreateComponent,
+    LandingPageComponent
     
   ],
   imports: [
@@ -35,7 +39,11 @@ import { CreateComponent } from './views/user/create/create.component';
     BrowserModule,
     routing,
     CalendarModule,
-    DataTableModule
+    DataTableModule,
+    HttpClientModule,
+    HttpModule,
+    
+
 
     
   ],

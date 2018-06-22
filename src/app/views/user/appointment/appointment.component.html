@@ -1,69 +1,135 @@
 
 <form>
-    <table class="table" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="10">
-      <thead>
-      <tr>
+    <table class="table table-striped table-bordered table-responsive" style="margin-bottom: 0px">
+       <thead>
+         <tr>
           <th style="width: 20%; text-align: center" class="bg-primary">Appointment Schedule</th>
-          <th style="width: 20%; text-align: center"><a href="http://localhost:4200/create">Create Appointment</a></th>
+          <th style="width: 20%; text-align: center"><a routerLink="/create">Create Appointment</a></th>
           <th style="width: 20%; text-align: center">Preferences</th>
           <th style="width: 20%; text-align: center">Profile</th>
-          <th style="width: 20%"><a href="http://localhost:4200/login">Logout</a></th>          
+          <th style="width: 20%"><a routerLink="/login">Logout</a></th>          
+        </tr>
+        </thead>
+      </table>
+      <table class="table table-striped table-bordered table-responsive" style="margin-top: 0px">
+          <thead class="light">
+         
+            <th style="width:10%"></th>
+            <th style="width:10%" id="day1">
+              June 4, 2018 {{this.day}}
+            </th>
+            <th style="width:10%" id="day2">
+              June 5, 2018 {{this.day}}
+            </th>
+            <th style="width:10%" id="day3">
+              June 6, 2018 {{this.day}}
+            </th>
+            <th style="width:10%" id="day4">
+              June 7, 2018 {{this.day}}
+            </th>
+            <th style="width:10%" id="day5">
+              June 8, 2018 {{this.day}}
+            </th>
+            <th style="width:10%" id="day6">
+              June 9, 2018 {{this.day}}
+            </th>
+            <th style="width:10%" id="day7">
+              June 10, 2018 {{this.day}}
+            </th>
+          
+          </thead>
+          <tbody>
+          <tr>
+            <td id="nine">&nbsp;9:00-10:00am</td>
+            <td><span *ngFor="let patientNine of patientsNine">{{patientNine.name}}</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>        
+            <td></td>
           </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>June 4, 2018 {{this.day}}</td>
-      </tr>
-      <tr>
-        <td id="nine">&nbsp;9:00-10:00am</td>
-        <!--Need to get ngIf working to display span of Appointment Scheduled if match patient's time-->
-        <!--<td><span *ngIf="patient.time == Nine">Appointment Scheduled</span></td>-->
-      </tr>
-      <tr>
-          <td id="ten">10:00-11:00am</td>
-          <!--Need to get ngIf working to display span of Appointment Scheduled if match patient's time-->
-          <!--<td><span *ngIf="patient.time == Ten">Appointment Scheduled</span></td>-->
-      </tr>
-      <tr>
-          <td id="eleven">11:00-12:00pm</td>
-          <!--Need to get ngIf working to display span of Appointment Scheduled if match patient's time-->
-          <!--<td><span *ngIf="patient.time == Eleven">Appointment Scheduled</span></td>-->
-      </tr>
-      <tr>
-          <td id="twelve">&nbsp;12:00-1:00pm</td>
-          <!--Need to get ngIf working to display span of Appointment Scheduled if match patient's time-->
-          <!--<td><span *ngIf="patient.time == Twelve">Appointment Scheduled</span></td>-->
-      </tr>
-      <tr>
-          <td id="one">&nbsp;1:00-2:00pm</td>
-          <!--Need to get ngIf working to display span of Appointment Scheduled if match patient's time-->
-          <!--<td><span *ngIf="patient.time == One">Appointment Scheduled</span></td>-->
-      </tr>
-      <tr>
-          <td id="two">&nbsp;2:00-3:00pm</td>
-          <!--Need to get ngIf working to display span of Appointment Scheduled if match patient's time-->
-          <!--<td><span *ngIf="patient.time == Two">Appointment Scheduled</span></td>-->
-      </tr>
-      <tr>
-          <td id="three">&nbsp;3:00-4:00pm</td>
-          <!--Need to get ngIf working to display span of Appointment Scheduled if match patient's time-->
-          <!--<td><span *ngIf="patient.time == Three">Appointment Scheduled</span></td>-->
-      </tr>
-      <tr>
-          <td id="four">&nbsp;4:00-5:00pm </td>
-          <!--Need to get ngIf working to display span of Appointment Scheduled if match patient's time-->
-          <!--<td><span *ngIf="patient.time == Four">Appointment Scheduled</span></td>-->
-      </tr>
-      <tr> 
-          <td id="five">&nbsp;5:00-6:00pm </td>
-          <!--Need to get ngIf working to display span of Appointment Scheduled if match patient's time-->
-          <!--<td><span *ngIf="patient.time == Five">Appointment Scheduled</span></td>-->    
-      </tbody>
-      <tfoot>
-      <tr>
-          <td colspan="4">
-              <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
-          </td>
-      </tr>
-      </tfoot>
-  </table>
+          <tr>
+              <td id="ten">10:00-11:00am</td>
+              <td><span *ngFor="let patientTen of patientsTen">{{patientTen.name}}</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>        
+              <td></td>
+          </tr>
+          <tr>
+              <td id="eleven">11:00-12:00pm</td>
+              <td><span *ngFor="let patientEleven of patientsEleven">{{patientEleven.name}}</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>        
+              <td></td>
+          </tr>
+          <tr>
+              <td id="twelve">&nbsp;12:00-1:00pm</td>
+              <td><span *ngFor="let patientTwelve of patientsTwelve">{{patientTwelve.name}}</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>        
+              <td></td>
+          </tr>
+          <tr>
+              <td id="one">&nbsp;1:00-2:00pm</td>
+              <td><span *ngFor="let patientOne of patientsOne">{{patientOne.name}}</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>        
+              <td></td>
+          </tr>
+          <tr>
+              <td id="two">&nbsp;2:00-3:00pm</td>
+              <td><span *ngFor="let patientTwo of patientsTwo">{{patientTwo?.name}}</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>        
+              <td></td>
+          </tr>
+          <tr>
+              <td id="three">&nbsp;3:00-4:00pm</td>
+              <td><span *ngFor="let patientThree of patientsThree">{{patientThree?.name}}</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>        
+              <td></td>
+          </tr>
+          <tr>
+              <td id="four">&nbsp;4:00-5:00pm </td>
+              <td><span *ngFor="let patientFour of patientsFour">{{patientFour?.name}}</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>        
+              <td></td>
+          </tr>
+          <tr> 
+              <td id="five">&nbsp;5:00-6:00pm </td>
+              <td><span *ngFor="let patientFive of patientsFive">{{patientFive?.name}}</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>        
+              <td></td>  
+          </tr>  
+          </tbody>
+        
+      </table>
+    </form>
